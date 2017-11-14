@@ -15,6 +15,7 @@
 		0DBBE3561FBB89E800F63CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBBE3541FBB89E800F63CEB /* LaunchScreen.storyboard */; };
 		0DBBE3611FBB89E800F63CEB /* DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBE3601FBB89E800F63CEB /* DrawingTests.swift */; };
 		0DBBE36C1FBB89E800F63CEB /* DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBE36B1FBB89E800F63CEB /* DrawingUITests.swift */; };
+		0DBBE37A1FBB8A9200F63CEB /* RandomRectanglesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBE3791FBB8A9200F63CEB /* RandomRectanglesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0DBBE3671FBB89E800F63CEB /* DrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBBE36B1FBB89E800F63CEB /* DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITests.swift; sourceTree = "<group>"; };
 		0DBBE36D1FBB89E800F63CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DBBE3791FBB8A9200F63CEB /* RandomRectanglesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRectanglesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0DBBE34B1FBB89E800F63CEB /* FirstViewController.swift */,
 				0DBBE34D1FBB89E800F63CEB /* SecondViewController.swift */,
 				0DBBE34F1FBB89E800F63CEB /* Main.storyboard */,
+				0DBBE3791FBB8A9200F63CEB /* RandomRectanglesViewController.swift */,
 				0DBBE3521FBB89E800F63CEB /* Assets.xcassets */,
 				0DBBE3541FBB89E800F63CEB /* LaunchScreen.storyboard */,
 				0DBBE3571FBB89E800F63CEB /* Info.plist */,
@@ -262,6 +265,7 @@
 				0DBBE34E1FBB89E800F63CEB /* SecondViewController.swift in Sources */,
 				0DBBE34A1FBB89E800F63CEB /* AppDelegate.swift in Sources */,
 				0DBBE34C1FBB89E800F63CEB /* FirstViewController.swift in Sources */,
+				0DBBE37A1FBB8A9200F63CEB /* RandomRectanglesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
