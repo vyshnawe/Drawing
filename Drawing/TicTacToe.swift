@@ -38,12 +38,13 @@ import UIKit
         
         for draw in enterString{
             
-            var wdth:CGFloat = 1
-            var hght:CGFloat = 1
+            var wdth:CGFloat = 0
+            var hght:CGFloat = 0
             
             let char1:String.Index = draw.index(draw.startIndex, offsetBy: 0)
             let char2:String.Index = draw.index(draw.startIndex, offsetBy: 1)
             let char3:String.Index = draw.index(draw.startIndex, offsetBy: 2)
+            
             if(draw[char1] == "0"){
                 hght = 6
             }
