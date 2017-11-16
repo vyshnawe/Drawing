@@ -8,8 +8,30 @@
 
 import UIKit
 
+var enterNumber = 0
 class RandomRectanglesViewController: UIViewController {
 
+    @IBOutlet weak var enterRectNo: UITextField!
+    @IBOutlet weak var MondrainView: Mondrain!
+    
+    @IBAction func Done(_ sender: Any) {
+        if Int(enterRectNo.text!) == nil {
+            let alert = UIAlertController(title: "Enter a number",
+                                          message: "Please enter a valid Number as Input",
+                                          preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
+            alert.addAction(cancel)
+            if Int(enterRectNo.text!) == nil{
+                present(alert, animated: true, completion: nil)
+            }
+        }
+        else{
+            enterNumber = Int(enterRectNo.text!)!
+            MondrainView.setNeedsDisplay()
+        }
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

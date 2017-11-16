@@ -7,15 +7,10 @@
 //
 
 import UIKit
-enum NumberOfNumerals:Int {
-    case two = 2, four = 4, twelve = 12
-}
-class SecondViewController: UIViewController, CAAnimationDelegate {
-    
-    override func viewDidAppear(_ animated: Bool) {
-          
-        }
 
+class SecondViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

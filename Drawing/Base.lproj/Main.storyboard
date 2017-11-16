@@ -43,7 +43,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.76009780196158683" blue="0.15856236636682108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="TicTacToe" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="TicTacToe" image="second" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="enterPattern" destination="NYK-iw-PVd" id="1UO-ia-bWO"/>
                         <outlet property="ticTacToeView" destination="pME-qD-16S" id="ugp-cZ-GdJ"/>
@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
-        <!--Random-->
+        <!--Mondrian-->
         <scene sceneID="X9y-BH-Jks">
             <objects>
                 <viewController id="jbS-z0-APf" customClass="RandomRectanglesViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,15 +91,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VjG-vW-J8l" customClass="Mondrain" customModule="Drawing" customModuleProvider="target">
-                                <rect key="frame" x="67" y="96" width="240" height="361"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eL6-7R-nHy">
+                                <rect key="frame" x="218" y="494" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEt-GR-RRm">
+                                <rect key="frame" x="98" y="494" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxl-xP-slG">
+                                <rect key="frame" x="198" y="547" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="Done:" destination="jbS-z0-APf" eventType="touchUpInside" id="yMu-5L-Idj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VjG-vW-J8l" customClass="Mondrain" customModule="Drawing" customModuleProvider="target">
+                                <rect key="frame" x="12" y="49" width="350" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.99979154507861645" blue="0.79285844906100156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.79348141875506928" blue="0.19645576563012324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Random" id="gts-lh-3ve"/>
+                    <tabBarItem key="tabBarItem" title="Mondrian" image="second" id="gts-lh-3ve"/>
+                    <connections>
+                        <outlet property="MondrainView" destination="VjG-vW-J8l" id="f0k-wz-as9"/>
+                        <outlet property="enterRectNo" destination="eL6-7R-nHy" id="xvj-JQ-AIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IiL-1w-ZlG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +153,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
