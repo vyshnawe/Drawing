@@ -35,6 +35,7 @@ class Clock: UIView {
         hourHand.addLine(to: CGPoint(x:size.width/2.0, y: size.height/2.0))
         hourHand.stroke()
         
+        
         let minHand = UIBezierPath()
         let minArc = UIBezierPath()
         let minAngle:CGFloat = .pi * CGFloat(((Double(minute) / 5.0) - 3.0) / 6.0)

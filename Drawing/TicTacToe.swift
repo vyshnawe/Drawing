@@ -47,29 +47,29 @@ import UIKit
             if(draw[char1] == "0"){
                 hght = 6
             }
-             if (draw[char1] == "1"){
+             if draw[char1] == "1"{
                 hght = 2
             }
-          if (draw[char1] == "2"){
+          if draw[char1] == "2"{
                 hght = 1.2
             }
-          if (draw[char2] == "0"){
+          if draw[char2] == "0"{
                 wdth = 6
             }
-             if (draw[char2] == "1"){
+             if draw[char2] == "1"{
                 wdth = 2
             }
-            if (draw[char2] == "2"){
+            if draw[char2] == "2"{
                 wdth = 1.2
             }
-            if (draw[char3] == "x" || draw[char3] == "X") {
+            if draw[char3] == "x" || draw[char3] == "X" {
                 bezier.move(to: CGPoint(x:size.width/(wdth) - size.width/10.0, y:size.height/(hght) - size.height/10.0))
                 bezier.addLine(to: CGPoint(x:size.width/(wdth) + size.width/10.0, y:size.height/(hght) + size.height/10.0))
                 bezier.move(to: CGPoint(x:size.width/(wdth) + size.width/10.0, y:size.height/(hght) - size.height/10.0))
                 bezier.addLine(to: CGPoint(x:size.width/(wdth) - size.width/10.0, y:size.height/(hght) + size.height/10.0))
                 
             }
-             if (draw[char3] == "o" || draw[char3] == "O") {
+             if draw[char3] == "o" || draw[char3] == "O" {
                 bezier.move(to:CGPoint(x:(size.width/wdth)+size.width/10.0,y:size.height/hght))
                 
                 bezier.addArc(withCenter: CGPoint(x:size.width/wdth,y:size.height/hght), radius: size.width/10.0, startAngle: 0.0, endAngle: 2 * .pi , clockwise: true)
