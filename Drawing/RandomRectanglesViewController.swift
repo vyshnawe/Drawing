@@ -17,7 +17,7 @@ class RandomRectanglesViewController: UIViewController {
     @IBAction func Done(_ sender: Any) {
         if Int(enterRectNo.text!) == nil {
             let alert = UIAlertController(title: "Enter a number",
-                                          message: "Please enter a valid Number as Input",
+                                          message: "Please enter a valid number",
                                           preferredStyle: .alert)
             let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
             alert.addAction(cancel)
